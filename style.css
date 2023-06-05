@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(13, 19, 23, 0.95) 60%, rgba(0, 0, 0, 1) 100%);
+}
+
+/* może niech zacznie rosnąć top w pionie */
+.top {
+    position: relative;
+    height: 60%;
+}
+
+.top img,
+.top h1,
+.top h2,
+.top h3 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.top img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.top h1 {
+    font-size: 28px;
+    color: rgb(243, 182, 16);
+    top: 10%;
+}
+
+.top h2 {
+    font-size: 20px;
+    line-height: 120%;
+    color: rgb(243, 182, 16);
+    padding: 0 10%;
+    bottom: 18%;
+}
+
+.top h3 {
+    font-size: 19px;
+    line-height: 120%;
+    color: rgb(243, 182, 16);
+    bottom: 5%;
+    padding: 0 5%;
+}
+
+.bottom {
+    position: relative;
+    height: 40%;
+}
+
+.bottom p {
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(20, 80, 100, 0.5);
+    margin: 0 10%;
+    bottom: 30%;
+    padding: 10px 15px 10px 10px;
+    border: 1px solid deepskyblue;
+    line-height: 120%;
+}
+
+@media (min-width: 360px) {
+    .top h1 {
+        font-size: 32px;
+        top: 15%;
+    }
+
+    .top h2 {
+        font-size: 24px;
+    }
+
+    .top h3 {
+        font-size: 22px;
+        bottom: 8%;
+    }
+
+    .bottom p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 410px) and (orientation: portrait) {
+    .top h1 {
+        font-size: 38px;
+        top: 18%;
+    }
+
+    .top h2 {
+        font-size: 27px;
+    }
+
+    .top h3 {
+        font-size: 25px;
+    }
+
+    .bottom p {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .top h1 {
+        font-size: 50px;
+        top: 20%;
+    }
+
+    .top h2 {
+        font-size: 30px;
+    }
+
+    .top h3 {
+        font-size: 28px;
+    }
+
+    .bottom p {
+        font-size: 27px;
+        padding: 30px 50px 30px 30px;
+    }
+}
+
+@media (orientation: landscape) {
+    header {
+        height: 200vh;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 40%, rgba(13, 19, 23, 0.95) 50%, rgba(0, 0, 0, 1) 100%);
+    }
+
+    .top {
+        height: 50%;
+    }
+
+    .bottom p {
+        font-size: 22px;
+        margin: 0;
+        bottom: 20%;
+        padding: 20px 40px 20px 30px;
+        line-height: 140%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 768px) {
+    header {
+        height: 100vh;
+        background: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 1) 100%);
+    }
+
+    .top {
+        float: left;
+        width: 60%;
+        height: 100%;
+    }
+
+    .top h1 {
+        font-size: 45px;
+    }
+
+    .top h2 {
+        font-size: 28px;
+    }
+
+    .top h3 {
+        font-size: 26px;
+    }
+
+    .bottom {
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    .bottom p {
+        font-size: 28px;
+        margin: auto 20px;
+        padding: 50px 20px;
+        line-height: 140%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    header {
+        height: 100vh;
+        background: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 1) 100%);
+    }
+
+    .top {
+        float: left;
+        width: 60%;
+        height: 100%;
+    }
+
+    .top h1 {
+        font-size: 45px;
+    }
+
+    .top h2 {
+        font-size: 28px;
+    }
+
+    .top h3 {
+        font-size: 26px;
+    }
+
+    .bottom {
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    .bottom p {
+        font-size: 28px;
+        margin: auto 20px;
+        padding: 50px 20px;
+        line-height: 140%;
+    }
+}
